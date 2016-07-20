@@ -5,12 +5,14 @@
     height: 198px;
     display: flex;
     margin-left: 500px;
+    margin-top: -55px;
 }
 h3.slogan {
     margin-left: 14px;
-    margin-top: 47px;
+    margin-top: 63px;
     text-align: center;
     height: auto;
+    font-family: monospace;
 }
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -46,4 +48,7 @@ p {
 span.title a {
     color: #ffffff;
     text-decoration: none;
+}
+.leftMMenu.ng-scope {
+    width: 174px;
 }

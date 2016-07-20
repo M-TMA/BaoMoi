@@ -1,10 +1,19 @@
 <html lang="en">
 
 <head>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.9/angular.min.js"></script>
+    <script src="https://rawgit.com/dwmkerr/angular-modal-service/master/dst/angular-modal-service.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.0.js"></script>
+
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/controller/example.js"></script>
+
     <meta charset="UTF-8">
     <title>Báo Mới</title>
     <nav class="navbar navbar-default">
@@ -24,11 +33,36 @@
 </head>
 
 <body>
+    <div>
+        <div class="leftMMenu" ng-app="ui.bootstrap.demo" ng-controller="AccordionDemoCtrl">
+            <uib-accordion close-others="oneAtATime">
 
-    <div class="container-slogan">
-        <h3 class="slogan">Báo Mới Của Mọi</h3>
-        <img src="../pictures/home.png" alt="">
+                <div uib-accordion-group class="panel-default" heading="Administrator Tools">
+                    <p>The body of the uib-accordion group grows to fit the contents</p>
+                    <ul>
+                        <li>
+                            <button type="button" class="btn btn-default btn-sm" ng-click="addArticle()">Add</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-default btn-sm" ng-click="updateArticle()">Update</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-default btn-sm" ng-click="deleteArticle()">Delete</button>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </uib-accordion>
+        </div>
+        <div class="container-slogan">
+            <h3 class="slogan">Báo Của Mọi</h3>
+            <img src="../pictures/home.png" alt="">
+
+        </div>
     </div>
+
+
     <div class="main-content">
         <div class="row">
             <div class="col-xs-6 col-md-3">
@@ -43,7 +77,6 @@
                 <a href="#" class="thumbnail">
                     <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
                 </a>
-
                 <span class="title"><a href="">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
                 <p class="quick-content"></p>
 
@@ -67,6 +100,8 @@
 
 
     </div>
+
 </body>
+
 
 </html>
