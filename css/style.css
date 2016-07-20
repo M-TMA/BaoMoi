@@ -6,6 +6,8 @@
     display: flex;
     margin-left: 500px;
     margin-top: -55px;
+    position: absolute;
+    top: 121px;
 }
 h3.slogan {
     margin-left: 14px;
@@ -50,5 +52,11 @@ span.title a {
     text-decoration: none;
 }
 .leftMMenu.ng-scope {
-    width: 174px;
+    width: 170px;
+    display: block;
+}
+.main-content {
+    width: auto;
+    position: absolute;
+    top: 297px;
 }
