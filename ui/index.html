@@ -11,88 +11,113 @@
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.0.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/controller/example.js"></script>
-
+    <script src="../js/controller/action-menu.js"></script>
     <meta charset="UTF-8">
+
     <title>Báo Mới</title>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Báo Mới</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Thể Thao</a></li>
-                <li><a href="#">Sức Khỏe</a></li>
-                <li><a href="#">Đời Sống</a></li>
-                <li><a href="#">Giáo Dục</a></li>
-            </ul>
-        </div>
-    </nav>
+
 </head>
 
 <body>
-    <div class="leftMMenu" ng-app="ui.bootstrap.demo" ng-controller="AccordionDemoCtrl">
-        <uib-accordion close-others="oneAtATime">
 
-            <div uib-accordion-group class="panel-default" heading="Administrator Tools">
-                <p>The body of the uib-accordion group grows to fit the contents</p>
-                <ul>
-                    <li>
-                        <button type="button" class="btn btn-default btn-sm" ng-click="addArticle()">Add</button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-default btn-sm" ng-click="updateArticle()">Update</button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-default btn-sm" ng-click="deleteArticle()">Delete</button>
-                    </li>
 
+    <div class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Báo Mới</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Thể Thao</a></li>
+                    <li><a href="#">Sức Khỏe</a></li>
+                    <li><a href="#">Đời Sống</a></li>
+                    <li><a href="#">Giáo Dục</a></li>
                 </ul>
             </div>
+        </nav>
 
-        </uib-accordion>
-    </div>
-    <div class="container-slogan">
-        <h3 class="slogan">Báo Của Mọi</h3>
-        <img src="../pictures/home.png" alt="">
-
-    </div>
-    <div class="main-content">
-        <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
-                </a>
-                <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
-                <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
-                </p>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
-                </a>
-                <span class="title"><a href="">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
-                <p class="quick-content"></p>
-
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
-                </a>
-                <span class="title"><a href="">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
-                <p class="quick-content"></p>
-
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
-                </a>
-                <span class="title"><a href="">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
-                <p class="quick-content"></p>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="slogan">Thế Giới</h1>
+                <p>Tin hot nhất trong ngày</p>
             </div>
         </div>
 
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
+                    </a>
+                    <span class="date">1 giờ trước</span>
+                    <div class="category"><a href="#">Thế Giới</a></div>
+                    <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
+                    <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
+                    </p>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
+                    </a>
+                    <span class="date">1 giờ trước</span>
+                    <div class="category"><a href="#">Thế Giới</a></div>
+                    <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
+                    <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
+                    </p>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
+                    </a>
+                    <span class="date">1 giờ trước</span>
+                    <div class="category"><a href="#">Thế Giới</a></div>
+                    <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
+                    <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
+                    </a>
+                    <span class="date">1 giờ trước</span>
+                    <div class="category"><a href="#">Thế Giới</a></div>
+                    <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
+                    <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
+                    </a>
+                    <span class="date">1 giờ trước</span>
+                    <div class="category"><a href="#">Thế Giới</a></div>
+                    <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
+                    <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://images.tienphong.vn/Uploaded/duongnt/2016_07_20/4295391_JTIR.jpg?w=440" alt="">
+                    </a>
+                    <span class="date">1 giờ trước</span>
+                    <div class="category"><a href="#">Thế Giới</a></div>
+                    <span class="title"><a href="#">Ông Obama và Erdogan điện đàm về cuộc đảo chính ở Thổ Nhĩ Kỳ</a></span>
+                    <p class="quick-content">TPO - Tổng thống Mỹ Barack Obama đã cuộc điện đàm với người đồng cấp Thổ Nhĩ Kỳ Tayyip Erdogan nhằm tái khẳng định sự ủng hộ của Washington đối với chính quyền đương nhiệm Ankara.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
 
     </div>
 
