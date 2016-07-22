@@ -1,62 +1,60 @@
-.container-slogan {
-    width: 210px;
-    background-color: antiquewhite;
-    border-radius: 50%;
-    height: 198px;
-    display: flex;
-    margin-left: 500px;
-    margin-top: -55px;
-    position: absolute;
-    top: 121px;
-}
-h3.slogan {
-    margin-left: 14px;
-    margin-top: 63px;
-    text-align: center;
-    height: auto;
-    font-family: monospace;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #1cad8b;
-}
-.row {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 56px;
-}
-p {
-    background-color: antiquewhite;
-    font-size: 12px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.thumbnail {
-    display: block;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
-    margin-bottom: 6px;
-}
-span.title a {
-    color: #ffffff;
-    text-decoration: none;
-}
-.leftMMenu.ng-scope {
-    width: 170px;
-    display: block;
-}
-.main-content {
-    width: auto;
-    position: absolute;
-    top: 297px;
-}
+    .icon img {
+        width: 72px;
+    }
+    .icon {
+        height: 300px;
+    }
+    .col-md-12.text-center {
+        margin-top: 55px;
+    }
+    body {
+        background-color: cornsilk;
+    }
+    span.date {
+        border: solid 1px;
+        background-color: cornflowerblue;
+        color: white;
+    }
+    .category {
+        text-transform: uppercase;
+        font-size: 11px;
+        margin-left: 77px;
+        margin-top: -17px;
+        color: black
+    }
+    .category a {
+        color: brown;
+    }
+    .col-md-2 {
+        border: solid 1px #acb6bf;
+        background-color: aliceblue;
+    }
+    p.quick-content {
+        font-size: 11px;
+    }
+    .col-md-2 {
+        width: 191px;
+        border: solid 1px #acb6bf;
+        background-color: aliceblue;
+        margin-left: 2px;
+        margin-right: 2px;
+        border-radius: 3px;
+    }
+    .title a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .container.jumbotron {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .container.jumbotron:after {
+        background-color: aqua;
+        opacity: 0.3;
+        position: absolute;
+    }
+    .container.jumbotron.slogan {
+        color: black;
+        position: relative;
+        z-index: 0;
+    }
